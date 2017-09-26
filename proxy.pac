@@ -3,6 +3,7 @@ var direct = 'DIRECT;';
 var domains = [
   "acm.org",
   "acs.org",
+  "aip.org",
   "sciencemag.org",
 ];
 
