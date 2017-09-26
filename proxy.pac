@@ -1,5 +1,5 @@
-var proxy = 'PROXY 113.55.13.136:3128;';
-var direct = 'DIRECT;';
+var proxy = 'PROXY 113.55.13.136:3128; DIRECT';
+var direct = 'DIRECT';
 var domains = [
   "acm.org",
   "acs.org",
