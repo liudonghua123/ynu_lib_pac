@@ -74,9 +74,9 @@ var domains = [
   "scifinder.cas.org",
   "scitation.aip.org",
   "search.ebscohost.com",
-  "Search.proquest.com",
+  "search.proquest.com",
   "siam.lib.tsinghua.edu.cn",
-  "SPIEDigitalLibrary.org",
+  "spiedigitallibrary.org",
   "ssvideo.chaoxing.com",
   "sxyndx.chineseall.cn",
   "www1.resset.cn",
@@ -119,7 +119,6 @@ var domains = [
   "ynuedu.vip.qikan.com",
   "ynu.findplus.cn",
   "ynu.firstlight.cn",
-  "ynu.firstlight.cn",
   "ip.cn",
 ];
 
@@ -127,7 +126,7 @@ function FindProxyForURL(url, host) {
    // if matched the list , send to a specific proxy.
    var match = false;
    for(var i = 0; i < domains.length; i++) {
-     if (host.endsWith(domains[i])) {
+     if (host.toLowerCase().endsWith(domains[i])) {
         match = true;
         break;
      }
